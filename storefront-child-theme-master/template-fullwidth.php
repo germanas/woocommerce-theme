@@ -11,23 +11,20 @@ get_header(); ?>
 	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="lol">
-			</div>
-			<?php while ( have_posts() ) : the_post();
+		<div class="pages-container">
 
-				do_action( 'storefront_page_before' );
 
-				get_template_part( 'content', 'page' );
+			
+	<?php if ( have_posts() ) :
 
-				/**
-				 * Functions hooked in to storefront_page_after action
-				 *
-				 * @hooked storefront_display_comments - 10
-				 */
-				do_action( 'storefront_page_after' );
+			get_template_part( 'loop' );
 
-			endwhile; // End of the loop. ?>
+		else :
 
+			get_template_part( 'content', 'none' );
+
+		endif; ?>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

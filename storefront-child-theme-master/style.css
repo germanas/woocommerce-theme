@@ -22,23 +22,214 @@ Images License: GNU General Public License v2 or later
 /*
  * Add your own custom css below this text.
  */
-.lol {
 
-	height: 100px;
-	width: 100%;
-	background-color: red;
+ /*body { 
+  background: url(http://cdn.pcwallart.com/images/color-gradient-background-wallpaper-1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+/*-----------Body styles etc-------*/
+
+.site-content .col-full  {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    box-sizing: content-box;
 }
+.site-content .col-full .woocommerce-breadcrumb{
+	width: 1200px;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+}
+.site-header .col-full {
+	max-width: 1200px;
+	margin-left: auto;
+    margin-right: auto;
+}
+.container-class{
+	width: 1200px;
+	margin-left: auto;
+    margin-right: auto;
+}
+.main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a{
+	padding: 0 10px;
+}
+.site-header-cart .cart-contents {
+	padding: 0px;
+}
+
+a:focus,
+.focus a {
+	outline: none !important;
+}
+button:focus {
+	outline: none !important;
+}
+
+
+
+
 .site-header{
+	background-color: #ffffff;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom:none;
 }
-
+/*
 #secondary.widget-area {
 	float: left;
 }
 #primary.content-area {
 	float: right;
+}
+*/
+
+ul.products li.product {
+	background-color: red;
+}
+.site-content{
+	background-color: transparent;
+}
+#main.site-main{
+	padding-top: 0px;
+	background-color:white;
+}
+
+body.woocommerce #primary { 
+
+ }
+.big_image{
+	background-color: #ecf0f1;
+
+	display: flex;
+	min-height: 680px;
+	font-size: 50px;
+	font-weight: 800;
+
+}
+.box2{
+	background-color: red;
+	margin-top:15px;
+	min-height: 400px;
+}
+
+.woocommerce-active .site-header .site-header-cart {
+float: right;
+	}
+
+@media (min-width: 1200px) {
+
+.woocommerce-active .site-header .site-header-cart {
+float: none;
+	}
+}
+
+
+
+::-moz-selection { 
+	background: yellow;
+	text-shadow: none;
 
 }
 
-ul.products li.product{
-	background-color: red;
+::selection { 
+	background: yellow; 
+	text-shadow: none;
+}
+h1, h2, h3, h4, h5, h6, body, button, input, textarea {
+	font-family: 'Ubuntu', sans-serif;
+
+}
+.site-message{
+	width: 1200px; 
+	 margin: auto; 
+	 padding-left: 100px;
+	 text-align: center;
+}
+.site-message h1 {
+	color: #9b59b6;
+	font-size: 140px;
+	font-family: 'Hammersmith One', sans-serif;
+	 
+
+	text-transform: uppercase;
+	transform: rotate(-0deg);
+/* 	text-shadow: 10px 10px 0 red,
+				9px 9px 0 red,
+				8px 8px 0 red,
+				7px 7px 0 red,
+				6px 6px 0 red,
+				5px 5px 0 red,
+				4px 4px 0 red,
+				3px 3px 0 red,
+				2px 2px 0 red,
+				1px 1px 0 red; */
+	text-shadow: calc(var(--left, 100) * 0.1px) calc(var(--top, 1) * 0.1px) 0 red;
+
+}
+
+
+
+
+.site-message h2 {
+	margin-top:0px;
+	color: black;
+	font-size: 140px;
+	font-family: 'Hammersmith One', sans-serif;
+
+}
+
+.site-message button {
+	background-color: transparent;
+	border: 2px solid #9b59b6;
+	color: #9b59b6;
+	font-size: 16px;
+	border-radius: 25px;
+	margin-bottom: 25px;
+	margin-top: -25px;
+}
+.site-message button:hover {
+
+	background-color: #9b59b6;
+	color: white;
+	}
+
+.pages-container{
+	width: 1200px;
+	margin-left: auto;
+    margin-right: auto;
+}
+.product-items{
+	height: 600px;
+}
+#product-item-1, #product-item-3, #product-item-5{
+	background-color: #95a5a6;
+} 
+#product-item-2, #product-item-4, #product-item-6{
+	background-color: #bdc3c7;
+} 
+.about-us{
+	height: 600px;
+	background-color: #34495e;
+}
+
+#product-container-1 {
+	height: 400px;
+	width: 600px;
+	display: flex;
+	align-items: flex-start;
+}
+#product-container-1 img{
+	width: 250px;
+    height: 200px;
+    
+
+}
+#product-container-1 h1,p{
+	
 }
